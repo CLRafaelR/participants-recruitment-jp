@@ -59,6 +59,12 @@ sendReminders関数内の変数
 | experimenterPhone | 実験者の電話番号を入れてください |
 | experimentRoom | 実験室の名前を入れてください |
 
+endFormCheck関数内の変数
+
+| 変数名 | 説明 |
+|:---|:---|
+| LIMIT_COUNT | 参加者の定員数 |
+
 ### google sitesで参加者を募集するためのページを作成して下さい
 完成例として、https://sites.google.com/site/ishiguroshinri/ あるいは https://sites.google.com/site/snishiyamaexperiment/ をご覧ください。
   
@@ -103,6 +109,8 @@ sendReminders関数内の変数
 | sendToCalendar |スプレッドシートから　フォーム送信時 |
 | updateCalendar | スプレッドシートから　値の変更 |
 | sendReminders | 時間主導型　日タイマー　任意の時間（e.g., 午後7時〜8時） |
+| endFormCheck |スプレッドシートから　フォーム送信時 |
+
 ### 以上で導入は終了です
 
 ## 運用
