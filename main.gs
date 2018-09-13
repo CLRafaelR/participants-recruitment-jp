@@ -300,6 +300,16 @@ function updateCalendar(e){
   }
 }
 
+//実験参加者募集受付を定員を満たし次第締め切る関数
+function endFormCheck() {
+  var LIMIT_COUNT = 12; //ここに人数の上限値を設定
+
+  var form = FormApp.getActiveForm();
+  if (form.getResponses().length >= LIMIT_COUNT) {
+    form.setAcceptingResponses(false);
+  }
+}
+
 //リマインダーを実行する関数
 function sendReminders(e) {
   try {
