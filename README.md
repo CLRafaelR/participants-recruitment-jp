@@ -64,6 +64,7 @@ endFormCheck関数内の変数
 | 変数名 | 説明 |
 |:---|:---|
 | LIMIT_COUNT | 参加者の定員数 |
+| url | 予約フォームのURL（末尾が`/edit`で終わるもの） |
 
 ### google sitesで参加者を募集するためのページを作成して下さい
 完成例として、https://sites.google.com/site/ishiguroshinri/ あるいは https://sites.google.com/site/snishiyamaexperiment/ をご覧ください。
@@ -102,6 +103,7 @@ endFormCheck関数内の変数
 - スクリプトエディタが開かれますので、ここにmain.gsの内容を貼り付けます。
 
 ### main.gsが実行されるように設定して下さい
+
 - スクリプトエディタの編集->現在のプロジェクトのトリガーを選択し、新しいトリガーをクリックし、以下の項目を設定して下さい。
 
 | 実行 | イベント |
@@ -110,6 +112,15 @@ endFormCheck関数内の変数
 | updateCalendar | スプレッドシートから　値の変更 |
 | sendReminders | 時間主導型　日タイマー　任意の時間（e.g., 午後7時〜8時） |
 | endFormCheck |スプレッドシートから　フォーム送信時 |
+
+### endFormCheck.gsが実行されるように設定して下さい
+
+- 募集フォームの右上にある「…」（実際は縦書き）から「スクリプトエディタ」を開き、そこに[スクリプト](participants-recruitment-jp/endFormCheck.gs)を貼りつけます。
+- スクリプトエディタの編集->現在のプロジェクトのトリガーを選択し、新しいトリガーをクリックし、以下の項目を設定して下さい。
+
+| 実行 | イベント |
+|:---|:---|
+| endFormCheck |フォームから　フォーム送信時 |
 
 ### 以上で導入は終了です
 
