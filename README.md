@@ -111,7 +111,6 @@ endFormCheck関数内の変数
 | sendToCalendar |スプレッドシートから　フォーム送信時 |
 | updateCalendar | スプレッドシートから　値の変更 |
 | sendReminders | 時間主導型　日タイマー　任意の時間（e.g., 午後7時〜8時） |
-| endFormCheck |スプレッドシートから　フォーム送信時 |
 
 ### endFormCheck.gsが実行されるように設定して下さい
 
